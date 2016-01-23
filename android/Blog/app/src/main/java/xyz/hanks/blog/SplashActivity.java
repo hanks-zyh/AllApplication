@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
+ * 启动界面
  * Created by hanks on 16/1/23.
  */
 public class SplashActivity extends Activity{
