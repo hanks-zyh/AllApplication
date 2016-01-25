@@ -1,6 +1,6 @@
 package xyz.hanks.blog.util;
 
-import com.orhanobut.logger.Logger;
+import com.socks.library.KLog;
 
 import xyz.hanks.blog.BuildConfig;
 
@@ -14,6 +14,7 @@ public class LogUtils {
 
     /**
      * 打印catch的异常信息
+     *
      * @param e
      */
     public static void logE(Exception e) {
@@ -24,35 +25,35 @@ public class LogUtils {
 
     // 下面四个是默认tag的函数
     public static void i(String msg) {
-        if (showLog) Logger.i(msg);
+        if (showLog) KLog.i(msg);
     }
 
     public static void d(String msg) {
-        if (showLog) Logger.d(msg);
+        if (showLog) KLog.d(msg);
     }
 
     public static void e(String msg) {
-        if (showLog) Logger.e(msg);
+        if (showLog) KLog.e(msg);
     }
 
     public static void v(String msg) {
-        if (showLog) Logger.v(msg);
+        if (showLog) KLog.v(msg);
     }
 
     // 下面是传入自定义tag的函数
     public static void i(String tag, String msg) {
-        if (showLog) Logger.i(tag,msg);
+        if (showLog) KLog.i(tag, msg);
     }
 
     public static void d(String tag, String msg) {
-        if (showLog) Logger.i(tag,msg);
+        if (showLog) KLog.i(tag, msg);
     }
 
     public static void e(String tag, String msg) {
-        if (showLog) Logger.i(tag,msg);
+        if (showLog) KLog.i(tag, msg);
     }
 
     public static void v(String tag, String msg) {
-        if (showLog) Logger.i(tag,msg);
+        if (showLog) KLog.i(tag, msg);
     }
 }
