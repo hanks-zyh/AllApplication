@@ -3,6 +3,7 @@ package xyz.hanks.blog.ui.main;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +17,7 @@ import xyz.hanks.blog.R;
  * 启动界面
  * Created by hanks on 16/1/23.
  */
-public class SplashActivity extends AppC {
+public class SplashActivity extends AppCompatActivity {
 
     private final int SPLASH_TIME = 1500;
 
