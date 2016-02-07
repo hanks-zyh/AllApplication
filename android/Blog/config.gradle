@@ -30,5 +30,6 @@ ext {
             "rxbinding"         : "com.jakewharton.rxbinding:rxbinding:0.3.0",
             "junit"             : "junit:junit:4.12",
             "glide"             : "com.github.bumptech.glide:glide:3.6.1",
+            "calligraphy"       : "uk.co.chrisjenx:calligraphy:2.1.0",
     ]
 }
