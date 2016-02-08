@@ -27,7 +27,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile rootProject.ext.dependencies["junit"]
-    compile rootProject.ext.dependencies["appcompat-v7"]
     compile rootProject.ext.dependencies["recyclerview-v7"]
     compile rootProject.ext.dependencies["support-v13"]
     compile rootProject.ext.dependencies["retrofit"]
