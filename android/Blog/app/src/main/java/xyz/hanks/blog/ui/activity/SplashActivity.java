@@ -1,4 +1,4 @@
-package xyz.hanks.blog.ui.main;
+package xyz.hanks.blog.ui.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -6,12 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import java.util.concurrent.TimeUnit;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import rx.Observable;
-import rx.functions.Action1;
 import xyz.hanks.blog.R;
 import xyz.hanks.blog.ui.base.BaseActivity;
 
