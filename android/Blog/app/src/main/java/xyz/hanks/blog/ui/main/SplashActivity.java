@@ -1,10 +1,15 @@
 package xyz.hanks.blog.ui.main;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import java.util.concurrent.TimeUnit;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import rx.Observable;
 import rx.functions.Action1;
 import xyz.hanks.blog.R;
@@ -16,18 +21,29 @@ import xyz.hanks.blog.ui.base.BaseActivity;
  */
 public class SplashActivity extends BaseActivity {
 
-    private final int SPLASH_TIME = 1500;
-
+    private final int SPLASH_TIME = 2000;
+    @Bind(R.id.img_bg) ImageView mImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Observable.timer(SPLASH_TIME, TimeUnit.MILLISECONDS)
-                .subscribe(new Action1<Long>() {
-                    @Override public void call(Long aLong) {
+        ButterKnife.bind(this);
+        mImage.animate()
+                .setDuration(SPLASH_TIME)
+                .scaleX(1.1f)
+                .scaleY(1.1f)
+                .setListener(new AnimatorListenerAdapter() {
+                    @Override public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
                         launchMainActivity();
                     }
-                });
+                })
+                .start();
+    }
+
+    @Override protected void onDestroy() {
+        ButterKnife.unbind(this);
+        super.onDestroy();
     }
 
     private void launchMainActivity() {
