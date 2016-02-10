@@ -25,12 +25,12 @@ public class SplashActivity extends BaseActivity {
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
         mImage.animate()
+                .setStartDelay(100)
                 .setDuration(SPLASH_TIME)
-                .scaleX(1.1f)
-                .scaleY(1.1f)
+                .scaleX(1.05f)
+                .scaleY(1.05f)
                 .setListener(new AnimatorListenerAdapter() {
                     @Override public void onAnimationEnd(Animator animation) {
-                        super.onAnimationEnd(animation);
                         launchMainActivity();
                     }
                 })

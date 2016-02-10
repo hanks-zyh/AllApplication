@@ -55,8 +55,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/img_cover"
-        android:drawablePadding="8dp"
-        android:drawableRight="@drawable/abc_ic_ab_back_mtrl_am_alpha"
         android:padding="12dp"
         android:text="The park is a favorite among skaters in California and it definitely deserves it. The park is complete with plenty of smooth banks to gain a ton…"
         android:textColor="#6C7B8A"
