@@ -19,7 +19,6 @@ import butterknife.ButterKnife;
 import xyz.hanks.blog.R;
 import xyz.hanks.blog.data.Article;
 import xyz.hanks.blog.ui.base.BaseActivity;
-import xyz.hanks.blog.util.LogUtils;
 
 public class MainActivity extends BaseActivity {
 
@@ -47,7 +46,7 @@ public class MainActivity extends BaseActivity {
         super.onDestroy();
     }
 
-     static class DemoViewHolder extends RecyclerView.ViewHolder {
+    static class DemoViewHolder extends RecyclerView.ViewHolder {
 
         @Bind(R.id.img_avatar) ImageView avatar;
         @Bind(R.id.img_cover) ImageView cover;
@@ -57,16 +56,16 @@ public class MainActivity extends BaseActivity {
 
         public DemoViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 
-     class DemoAdapter extends RecyclerView.Adapter<DemoViewHolder> {
+    class DemoAdapter extends RecyclerView.Adapter<DemoViewHolder> {
 
 
         @Override
         public DemoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_article,parent,false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_article, parent, false);
             return new DemoViewHolder(view);
         }
 
@@ -75,7 +74,6 @@ public class MainActivity extends BaseActivity {
             holder.title.setText(article.title);
             holder.content.setText(article.des);
             holder.time.setText("3 min");
-            LogUtils.d(article.imageUrl);
             Glide.with(getApplicationContext()).load(article.imageUrl).into(holder.avatar);
         }
 

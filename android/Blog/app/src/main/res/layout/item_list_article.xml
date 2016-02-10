@@ -11,13 +11,13 @@
         android:src="@mipmap/ic_launcher"/>
 
     <TextView
-        android:textColor="#3C4F5E"
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_toRightOf="@+id/img_avatar"
         android:text="Mcmunn"
+        android:textColor="#3C4F5E"
         android:textSize="14sp"/>
 
     <TextView
@@ -47,9 +47,15 @@
         android:drawablePadding="8dp"
         android:drawableRight="@drawable/abc_ic_ab_back_mtrl_am_alpha"
         android:padding="12dp"
-        android:textColor="#6C7B8A"
         android:text="The park is a favorite among skaters in California and it definitely deserves it. The park is complete with plenty of smooth banks to gain a ton…"
+        android:textColor="#6C7B8A"
         android:textSize="12sp"/>
+
+    <View
+        android:layout_below="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="#33333333"/>
 
 
 </RelativeLayout>
