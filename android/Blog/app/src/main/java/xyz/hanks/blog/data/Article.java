@@ -8,15 +8,17 @@ public class Article {
     public String title;
     public String des;
     public String content;
+    public String avatarUrl;
     public String imageUrl;
     public long date;
     public long id;
 
-    public Article(long id, String title, String des, String content, String imageUrl, long date) {
+    public Article(long id, String title, String des, String content, String avatarUrl,String imageUrl, long date) {
         this.id = id;
         this.title = title;
         this.des = des;
         this.content = content;
+        this.avatarUrl = avatarUrl;
         this.imageUrl = imageUrl;
         this.date = date;
     }
