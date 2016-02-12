@@ -1,5 +1,6 @@
 package xyz.hanks.blog.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -67,6 +68,8 @@ public class MainActivity extends BaseActivity {
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(new DemoAdapter());
+
+        startActivity(new Intent(this,ArticleActivity.class));
     }
 
     @Override protected void onDestroy() {

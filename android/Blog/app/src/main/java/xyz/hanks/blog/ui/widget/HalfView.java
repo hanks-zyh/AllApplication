@@ -43,7 +43,9 @@ public class HalfView extends View {
 
 
     @Override protected void onDraw(Canvas canvas) {
+        canvas.save();
         canvas.drawRect(0,0,getWidth(),getHeight(),mPaint);
         canvas.rotate((float) Math.atan(getHeight()*1.0f/getWidth()));
+        canvas.restore();
     }
 }
