@@ -22,6 +22,9 @@
         </activity>
         <activity android:name=".ui.activity.MainActivity"/>
         <activity android:name=".ui.activity.ArticleActivity"/>
+
+        <!--service-->
+        <service android:name=".service.UpdateService"/>
     </application>
 
 </manifest>
