@@ -9,14 +9,15 @@
         android:layout_height="280dp">
 
         <ImageView
-            android:onClick="download"
-            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/bg"/>
 
         <xyz.hanks.blog.ui.widget.HalfView
+
+            android:onClick="download"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"/>
